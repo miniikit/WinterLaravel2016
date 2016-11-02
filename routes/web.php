@@ -16,5 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
-
+//Welcomeページ
 Route::get('/', 'WelcomeController@index');
+//Contactページ
+Route::get('contact', 'PagesController@contact');
+//aboutページ
+Route::get('about', 'PagesController@about');

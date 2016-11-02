@@ -9,8 +9,10 @@ use App\Http\Controllers\Controller;
 
 class WelcomeController extends Controller
 {
-  public function index()
+  public function index() //welcomeページ
   {
       return view('welcome');
   }
+
+
 }
