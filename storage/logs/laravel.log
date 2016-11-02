@@ -1,0 +1,13 @@
+[2016-10-31 23:02:17] local.ERROR: exception 'Symfony\Component\Console\Exception\RuntimeException' with message 'The "--plain" option does not exist.' in /Users/minion/laraProject/LALATYO/vendor/symfony/console/Input/ArgvInput.php:219
+Stack trace:
+#0 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Input/ArgvInput.php(155): Symfony\Component\Console\Input\ArgvInput->addLongOption('plain', NULL)
+#1 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Input/ArgvInput.php(84): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--plain')
+#2 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Input/Input.php(62): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Command/Command.php(221): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 /Users/minion/laraProject/LALATYO/vendor/laravel/framework/src/Illuminate/Console/Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Application.php(820): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Application.php(187): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Routing\Console\ControllerMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /Users/minion/laraProject/LALATYO/vendor/symfony/console/Application.php(118): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /Users/minion/laraProject/LALATYO/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /Users/minion/laraProject/LALATYO/artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
